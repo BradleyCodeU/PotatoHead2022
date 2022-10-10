@@ -8,6 +8,7 @@ public class Potatohead
 	private int eyeNumber;
 	
 	// add one instance variable HERE
+	private String headColor;
 	
   
 	/*  the no argument constructor  */
@@ -16,6 +17,7 @@ public class Potatohead
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
     // initialize your instance variable HERE
+		headColor = "brown";
 
 	}
   
@@ -35,6 +37,14 @@ public class Potatohead
   {
 		eyeNumber = _numOfEyes;
 	}
+	/**
+		void setHeadColor(String _headColor)
+		mutator method for headColor
+		@param _headColor sets the head color of this potato head
+	*/
+	public void setHeadColor(String _headColor){
+		headColor = _headColor		
+	}
 		
 	/**
 		String getNumOfEyes()
@@ -45,6 +55,14 @@ public class Potatohead
   {
 		return eyeNumber;
 	}
+	/**
+		String getHeadColor()
+		accessor method for headColor
+		@return headColor get the head color of this potato head
+	*/
+	public String getHeadColor(){
+		return headColor;
+	}
 	
 
 	
@@ -53,7 +71,7 @@ public class Potatohead
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber + ". ";
     // Add your instance variable to the toString() method using += HERE
-
+		output += "Color Of Head: " + headColor + ". ";
 		
 		return output;
 	}
