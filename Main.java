@@ -15,7 +15,7 @@ public class Potatohead
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
-    	// STEP TWO: initialize your instance variable HERE
+    		// STEP TWO: initialize your instance variable HERE
 		headColor = "brown";
 
 	}
@@ -76,7 +76,7 @@ public class Potatohead
 	{
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber + ". ";
-    	// STEP FIVE: Add your instance variable to the toString() method using += HERE
+    		// STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
 		
 		return output;
