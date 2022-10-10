@@ -6,6 +6,7 @@ public class Potatohead
 
 	/*  PRIVATE instance variables go here  */
 	private int eyeNumber;
+	private int mouthNumber;
 	
 	// add one instance variable HERE
 	
@@ -15,9 +16,40 @@ public class Potatohead
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
+		mouthNumber = 1;
     // initialize your instance variable HERE
 
 	}
+	
+	
+	
+	
+	/**
+	int getNumOfMouths()
+	accessor method for mouthNumber
+	@return mouthNumber an int describing the number of mouths.
+	*/
+	
+	
+	
+	public int getNumOfMouths(){
+	   return mouthNumber;
+	}
+	
+	
+	/**
+	void setNumOfMouths(int _mouthNumber)
+	mutator method for mouthNumber
+	@param _mouthNumber for the amount of mouths the user desires.  
+	*/
+	
+	
+	
+	public void setNumberOfMouths(int _mouthNumber){
+	   mouthNumber = _mouthNumber;
+	}
+	   
+		
   
 
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
@@ -52,6 +84,7 @@ public class Potatohead
 	{
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber + ". ";
+		
     // Add your instance variable to the toString() method using += HERE
 
 		
