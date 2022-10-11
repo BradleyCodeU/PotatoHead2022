@@ -6,6 +6,8 @@ public class Potatohead
 
 	/*  PRIVATE instance variables go here  */
 	private int eyeNumber;
+  private String headColor;
+	private int mouthNumber;
 	
 	// STEP ONE: add one instance variable HERE
 	
@@ -15,10 +17,19 @@ public class Potatohead
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
-    		// STEP TWO: initialize your instance variable HERE
+    // initialize your instance variable HERE
 		headColor = "brown";
+    mouthNumber = 1;
+
 
 	}
+	
+	
+	
+	
+
+	   
+		
   
 
 	/*  VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE  */
@@ -39,6 +50,7 @@ public class Potatohead
 		return eyeNumber;
 	}
 	
+  
 	/**
 		String getHeadColor()
 		accessor method for headColor
@@ -47,16 +59,39 @@ public class Potatohead
 	public String getHeadColor(){
 		return headColor;
 	}
+  
+  
+  /**
+    int getNumOfMouths()
+    accessor method for mouthNumber
+    @return mouthNumber an int describing the number of mouths.
+	*/
+	public int getNumOfMouths(){
+	   return mouthNumber;
+	}
+	
+	
+	/**
+    void setNumOfMouths(int _mouthNumber)
+    mutator method for mouthNumber
+    @param _mouthNumber for the amount of mouths the user desires.  
+	*/
+	public void setNumberOfMouths(int _mouthNumber){
+	   mouthNumber = _mouthNumber;
+	}
+  
+  
 	/**
 		void setEyeNumber(int _numOfEyes)
 		mutator method for eyeNumber
 		@param _numOfEyes how many eyes should this Potatohead have? 
 	*/	
-	
 	public void setEyeNumber(int _numOfEyes)
   	{
 		eyeNumber = _numOfEyes;
 	}
+  
+  
 	/**
 		void setHeadColor(String _headColor)
 		mutator method for headColor
@@ -76,8 +111,10 @@ public class Potatohead
 	{
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber + ". ";
-    		// STEP FIVE: Add your instance variable to the toString() method using += HERE
+    // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
+    output += "Number Of Mouths: " + mouthNumber + ". "
+
 		
 		return output;
 	}
