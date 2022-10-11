@@ -84,6 +84,7 @@ public class Potatohead
 	{
 		String output = "PotatoHead object. ";
 		output += "Number Of Eyes: " + eyeNumber + ". ";
+		output += "Number Of Mouths: " + mouthNumber + ". "
 		
     // Add your instance variable to the toString() method using += HERE
 
