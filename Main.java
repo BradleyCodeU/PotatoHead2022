@@ -8,7 +8,7 @@ public class Potatohead
 	private int eyeNumber;
   private String headColor;
 	private int mouthNumber;
-	
+	private String eyeColor;
 	// STEP ONE: add one instance variable HERE
 	
   
@@ -17,6 +17,7 @@ public class Potatohead
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
+		eyeColor = "Black";
     // initialize your instance variable HERE
 		headColor = "brown";
     mouthNumber = 1;
@@ -37,14 +38,23 @@ public class Potatohead
   	// STEP THREE: Add an accessor method for your instance variable with Javadoc comments
 	// STEP FOUR: Add a mutator method for your instance variable with Javadoc comments
 	
-		
+	/**
+		String getEyeColor()
+		accessor method for eyeColor
+		@return eyeColor an String describing the color of the eye(s).
+	*/
 	
-		
+	public String getEyeColor()
+  	{
+		return eyeColor;
+	}	
+	
 	/**
 		String getEyeNumber()
 		accessor method for eyeNumber
 		@return eyeNumber an int describing the number of eyes.
 	*/
+	
 	public int getEyeNumber()
   	{
 		return eyeNumber;
@@ -101,7 +111,16 @@ public class Potatohead
 		headColor = _headColor		
 	}
 
+	/**
+		String setEyeColor()
+		mutator method for eyeColor
+		@param _eyeColor what color should the eye(s) be?
+	*/
 	
+	public void setEyeColor(_eyeColor)
+  	{
+		eyeColor = _eyeColor;
+	}
 
 	/**
 		String toString()
@@ -113,6 +132,7 @@ public class Potatohead
 		output += "Number Of Eyes: " + eyeNumber + ". ";
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
+		output += "Color Of Eye(s): " + eyeColor + ". ";
     output += "Number Of Mouths: " + mouthNumber + ". "
 
 		
