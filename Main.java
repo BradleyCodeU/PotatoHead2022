@@ -8,6 +8,7 @@ public class Potatohead
 	private int eyeNumber;
   private String headColor;
 	private int mouthNumber;
+	ptivate String shoeColor;
 	
 	// STEP ONE: add one instance variable HERE
 	
@@ -20,6 +21,7 @@ public class Potatohead
     // initialize your instance variable HERE
 		headColor = "brown";
     mouthNumber = 1;
+		shoeColor = "blue";
 
 
 	}
@@ -70,6 +72,15 @@ public class Potatohead
 	   return mouthNumber;
 	}
 	
+	/**
+    String getShoeColor()
+    accessor method for shoeColor
+    @return shoeColor a String describing the color of shoe.
+	*/
+	public String getShoeColor(){
+	   return shoeColor;
+	}
+	
 	
 	/**
     void setNumOfMouths(int _mouthNumber)
@@ -98,9 +109,18 @@ public class Potatohead
 		@param _headColor sets the head color of this potato head
 	*/
 	public void setHeadColor(String _headColor){
-		headColor = _headColor		
+		headColor = _headColor;		
 	}
-
+	
+        /**
+		void setHeadColor(String _headColor)
+		mutator method for shoeColor
+		@param _shoeColor sets the shoe color of this potato head
+	*/
+	
+	public void setShoeColor(String _shoeColor){
+		shoeColor = _shoeColor;		
+	}
 	
 
 	/**
@@ -113,8 +133,8 @@ public class Potatohead
 		output += "Number Of Eyes: " + eyeNumber + ". ";
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
-    output += "Number Of Mouths: " + mouthNumber + ". "
-
+    output += "Number Of Mouths: " + mouthNumber + ". ";
+                output += "Shoe Color: " + shoeColor + ". ";
 		
 		return output;
 	}
