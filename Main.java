@@ -8,6 +8,7 @@ public class Potatohead
 	private int eyeNumber;
   private String headColor;
 	private int mouthNumber;
+	private String shoeType;
 	private String eyeColor;
 	// STEP ONE: add one instance variable HERE
 	
@@ -21,6 +22,7 @@ public class Potatohead
     // initialize your instance variable HERE
 		headColor = "brown";
     mouthNumber = 1;
+		shoeType = "Yeezy's";
 
 
 	}
@@ -48,13 +50,13 @@ public class Potatohead
   	{
 		return eyeColor;
 	}	
+  
 	
 	/**
 		String getEyeNumber()
 		accessor method for eyeNumber
 		@return eyeNumber an int describing the number of eyes.
 	*/
-	
 	public int getEyeNumber()
   	{
 		return eyeNumber;
@@ -86,10 +88,29 @@ public class Potatohead
     mutator method for mouthNumber
     @param _mouthNumber for the amount of mouths the user desires.  
 	*/
-	public void setNumberOfMouths(int _mouthNumber){
+  public void setNumberOfMouths(int _mouthNumber){
 	   mouthNumber = _mouthNumber;
 	}
+
+  /**
+		String getShoeType()
+		accessor method for getShoeType
+		@return shoeType a string describing the type of shoe's.
+	*/
+	public String getShoeType() {
+		return shoeType;
+	}
   
+	
+	/**
+		void setShoeType(String _shoeType)
+		mutator method for shoeType
+		@param _shoeType what type of shoe should this Potatohead have? 
+	*/	
+	public String setShoeType(String _shoeType) {
+		shoetype = _shoeType;
+	}
+
   
 	/**
 		void setEyeNumber(int _numOfEyes)
@@ -108,8 +129,9 @@ public class Potatohead
 		@param _headColor sets the head color of this potato head
 	*/
 	public void setHeadColor(String _headColor){
-		headColor = _headColor		
+		headColor = _headColor;		
 	}
+  
 
 	/**
 		String setEyeColor()
@@ -118,7 +140,7 @@ public class Potatohead
 	*/
 	
 	public void setEyeColor(_eyeColor)
-  	{
+  {
 		eyeColor = _eyeColor;
 	}
 
@@ -132,8 +154,10 @@ public class Potatohead
 		output += "Number Of Eyes: " + eyeNumber + ". ";
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
+    output += "Number Of Mouths: " + mouthNumber + ". "; 
+	  output += "Type of shoe: " + shoeType + ". "; 
 		output += "Color Of Eye(s): " + eyeColor + ". ";
-    output += "Number Of Mouths: " + mouthNumber + ". "
+
 
 		
 		return output;
