@@ -8,7 +8,7 @@ public class Potatohead
 	private int eyeNumber;
   private String headColor;
 	private int mouthNumber;
-	private int shoeType;
+	private String shoeType;
 	
 	// STEP ONE: add one instance variable HERE
 	
@@ -83,11 +83,20 @@ public class Potatohead
 	Public String getShoeType() {
 		return shoeType;
 	}
-	// gets type of shoe then return shoeType
+	/**
+		String getShoeType()
+		accessor method for getShoeType
+		@return shoeType a string describing the type of shoe's.
+	*/
 	
 	Public String setShoeType(String _shoeType) {
 		shoetype = _shoeType;
 	}
+	/**
+		void setShoeType(String _shoeType)
+		mutator method for shoeType
+		@param _shoeType what type of shoe should this Potatohead have? 
+	*/	
 	// saves _shoeType argument in shoetype to set a shoe type
 	
 	
