@@ -9,7 +9,7 @@ public class Potatohead
   private String headColor;
 	private int mouthNumber;
 	private String shoeType;
-	
+	private String eyeColor;
 	// STEP ONE: add one instance variable HERE
 	
   
@@ -18,6 +18,7 @@ public class Potatohead
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
+		eyeColor = "Black";
     // initialize your instance variable HERE
 		headColor = "brown";
     mouthNumber = 1;
@@ -39,9 +40,18 @@ public class Potatohead
   	// STEP THREE: Add an accessor method for your instance variable with Javadoc comments
 	// STEP FOUR: Add a mutator method for your instance variable with Javadoc comments
 	
-		
+	/**
+		String getEyeColor()
+		accessor method for eyeColor
+		@return eyeColor an String describing the color of the eye(s).
+	*/
 	
-		
+	public String getEyeColor()
+  	{
+		return eyeColor;
+	}	
+  
+	
 	/**
 		String getEyeNumber()
 		accessor method for eyeNumber
@@ -78,32 +88,29 @@ public class Potatohead
     mutator method for mouthNumber
     @param _mouthNumber for the amount of mouths the user desires.  
 	*/
-	
-	
-	Public String getShoeType() {
-		return shoeType;
+  public void setNumberOfMouths(int _mouthNumber){
+	   mouthNumber = _mouthNumber;
 	}
-	/**
+
+  /**
 		String getShoeType()
 		accessor method for getShoeType
 		@return shoeType a string describing the type of shoe's.
 	*/
-	
-	Public String setShoeType(String _shoeType) {
-		shoetype = _shoeType;
+	public String getShoeType() {
+		return shoeType;
 	}
+  
+	
 	/**
 		void setShoeType(String _shoeType)
 		mutator method for shoeType
 		@param _shoeType what type of shoe should this Potatohead have? 
 	*/	
-	// saves _shoeType argument in shoetype to set a shoe type
-	
-	
-	public void setNumberOfMouths(int _mouthNumber){
-	   mouthNumber = _mouthNumber;
+	public String setShoeType(String _shoeType) {
+		shoetype = _shoeType;
 	}
-  
+
   
 	/**
 		void setEyeNumber(int _numOfEyes)
@@ -124,8 +131,18 @@ public class Potatohead
 	public void setHeadColor(String _headColor){
 		headColor = _headColor;		
 	}
+  
 
+	/**
+		String setEyeColor()
+		mutator method for eyeColor
+		@param _eyeColor what color should the eye(s) be?
+	*/
 	
+	public void setEyeColor(_eyeColor)
+  {
+		eyeColor = _eyeColor;
+	}
 
 	/**
 		String toString()
@@ -138,7 +155,9 @@ public class Potatohead
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
     output += "Number Of Mouths: " + mouthNumber + ". "; 
-	    output += "Type of shoe: " + shoeType + ". "; 
+	  output += "Type of shoe: " + shoeType + ". "; 
+		output += "Color Of Eye(s): " + eyeColor + ". ";
+
 
 		
 		return output;
