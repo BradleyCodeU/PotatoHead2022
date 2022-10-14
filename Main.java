@@ -11,7 +11,7 @@ public class Potatohead
 	private String shoeType;
 	private String eyeColor;
 	// STEP ONE: add one instance variable HERE
-	
+	private int age;
   
 	/*  the no argument constructor  */
 	public Potatohead()
@@ -23,6 +23,8 @@ public class Potatohead
 		headColor = "brown";
     mouthNumber = 1;
 		shoeType = "Yeezy's";
+    age = 10;
+
 
 
 	}
@@ -41,16 +43,27 @@ public class Potatohead
 	// STEP FOUR: Add a mutator method for your instance variable with Javadoc comments
 	
 	/**
+		Int getAge()
+		accessor method for age
+		@return age as an int.
+	*/
+		public String getAge(){
+			return age; 
+		}
+    
+    
+
+  /**
 		String getEyeColor()
 		accessor method for eyeColor
 		@return eyeColor an String describing the color of the eye(s).
 	*/
-	
 	public String getEyeColor()
   	{
 		return eyeColor;
 	}	
   
+
 	
 	/**
 		String getEyeNumber()
@@ -80,6 +93,15 @@ public class Potatohead
 	*/
 	public int getNumOfMouths(){
 	   return mouthNumber;
+	}
+	
+	/**
+    void setAge(int _age)
+    mutator method for age
+    @param change _age to be any int user wants.
+	*/
+	public void setAge(int _age) {
+		age = _age;
 	}
 	
 	
@@ -154,10 +176,10 @@ public class Potatohead
 		output += "Number Of Eyes: " + eyeNumber + ". ";
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
-    output += "Number Of Mouths: " + mouthNumber + ". "; 
+    output += "Number Of Mouths: " + mouthNumber + ". ";
+    output += "Age: " + age + ". ";
 	  output += "Type of shoe: " + shoeType + ". "; 
 		output += "Color Of Eye(s): " + eyeColor + ". ";
-
 
 		
 		return output;
