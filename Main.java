@@ -10,6 +10,7 @@ public class Potatohead
 	private int mouthNumber;
 	private String shoeType;
 	private String eyeColor;
+	private String shoeColor;
 	// STEP ONE: add one instance variable HERE
 	
   
@@ -23,7 +24,7 @@ public class Potatohead
 		headColor = "brown";
     mouthNumber = 1;
 		shoeType = "Yeezy's";
-
+		shoeColor = "blue"
 
 	}
 	
@@ -110,6 +111,25 @@ public class Potatohead
 	public String setShoeType(String _shoeType) {
 		shoetype = _shoeType;
 	}
+	
+	/**
+		String getShoeColor
+		accessor method for shoeColor
+		@return shoeColor gets the shoe color from potato head
+	*/
+	public String getShoeColor(){
+		return shoeColor;
+	}
+	
+	
+	/**
+		void setShoeColor(String _shoeColor)
+		mutator method for headcolor
+		@param _shoeColor user is coloring shoes
+	*/
+	public void setShoeColor(String _shoeColor){
+		shoeColor = _shoeColor
+	}
 
   
 	/**
@@ -157,7 +177,7 @@ public class Potatohead
     output += "Number Of Mouths: " + mouthNumber + ". "; 
 	  output += "Type of shoe: " + shoeType + ". "; 
 		output += "Color Of Eye(s): " + eyeColor + ". ";
-
+		output += "color of Shoes: " +shoeColor+ ". ";
 
 		
 		return output;
