@@ -8,7 +8,8 @@ public class Potatohead
 	private int eyeNumber;
   private String headColor;
 	private int mouthNumber;
-	
+	private String shoeType;
+	private String eyeColor;
 	// STEP ONE: add one instance variable HERE
 	private int age;
   
@@ -17,10 +18,13 @@ public class Potatohead
 	{
 		/* initialize ***ALL*** instance variables here */
 		eyeNumber = 2;
+		eyeColor = "Black";
     // initialize your instance variable HERE
 		headColor = "brown";
     mouthNumber = 1;
-		age = 10;
+		shoeType = "Yeezy's";
+    age = 10;
+
 
 
 	}
@@ -43,12 +47,24 @@ public class Potatohead
 		accessor method for age
 		@return age as an int.
 	*/
-			
 		public String getAge(){
 			return age; 
 		}
+    
+    
+
+  /**
+		String getEyeColor()
+		accessor method for eyeColor
+		@return eyeColor an String describing the color of the eye(s).
+	*/
+	public String getEyeColor()
+  	{
+		return eyeColor;
+	}	
+  
+
 	
-		
 	/**
 		String getEyeNumber()
 		accessor method for eyeNumber
@@ -94,10 +110,29 @@ public class Potatohead
     mutator method for mouthNumber
     @param _mouthNumber for the amount of mouths the user desires.  
 	*/
-	public void setNumberOfMouths(int _mouthNumber){
+  public void setNumberOfMouths(int _mouthNumber){
 	   mouthNumber = _mouthNumber;
 	}
+
+  /**
+		String getShoeType()
+		accessor method for getShoeType
+		@return shoeType a string describing the type of shoe's.
+	*/
+	public String getShoeType() {
+		return shoeType;
+	}
   
+	
+	/**
+		void setShoeType(String _shoeType)
+		mutator method for shoeType
+		@param _shoeType what type of shoe should this Potatohead have? 
+	*/	
+	public String setShoeType(String _shoeType) {
+		shoetype = _shoeType;
+	}
+
   
 	/**
 		void setEyeNumber(int _numOfEyes)
@@ -116,10 +151,20 @@ public class Potatohead
 		@param _headColor sets the head color of this potato head
 	*/
 	public void setHeadColor(String _headColor){
-		headColor = _headColor		
+		headColor = _headColor;		
 	}
+  
 
+	/**
+		String setEyeColor()
+		mutator method for eyeColor
+		@param _eyeColor what color should the eye(s) be?
+	*/
 	
+	public void setEyeColor(_eyeColor)
+  {
+		eyeColor = _eyeColor;
+	}
 
 	/**
 		String toString()
@@ -131,7 +176,10 @@ public class Potatohead
 		output += "Number Of Eyes: " + eyeNumber + ". ";
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
-    output += "Number Of Mouths: " + mouthNumber + "Age: " + age + ". "
+    output += "Number Of Mouths: " + mouthNumber + ". ";
+    output += "Age: " + age + ". ";
+	  output += "Type of shoe: " + shoeType + ". "; 
+		output += "Color Of Eye(s): " + eyeColor + ". ";
 
 		
 		return output;
