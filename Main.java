@@ -130,7 +130,7 @@ public class Potatohead
     // STEP FIVE: Add your instance variable to the toString() method using += HERE
 		output += "Color Of Head: " + headColor + ". ";
     output += "Number Of Mouths: " + mouthNumber + ". 
-	    output += "Do it have glasses: + hasGlasses";
+	    output += "Do it have glasses: " + hasGlasses;
 
 		
 		return output;
