@@ -16,6 +16,7 @@ public class Potatohead
 
 	// STEP ONE: add one instance variable HERE
 	private int age;
+	private int height; //this is the new instance variable that tells you the height in inches
   
 	/*  the no argument constructor  */
 	public Potatohead()
@@ -30,6 +31,7 @@ public class Potatohead
 		shoeColor = "pink";
 		shoeType = "Yeezy's";
     age = 10;
+    height = 10; //height of potato head
 
 	}
 	
@@ -55,7 +57,14 @@ public class Potatohead
 			return age; 
 		}
     
-    
+    /**
+		Int getHeight()
+		accessor method for height
+		@return height as an int.
+	*/
+		public String getHeight(){
+			return height; 
+		}
 
   /**
 		String getEyeColor()
@@ -106,6 +115,8 @@ public class Potatohead
 	   return mouthNumber;
 	}
 	
+	
+	
 	/**
 	void setHasGlasses(boolean _hasGlasses)
 	mutator method for hasGlasses
@@ -136,6 +147,14 @@ public class Potatohead
 		age = _age;
 	}
   
+	 /**
+    void setHeight(int _height)
+    mutator method for height
+    @param change _height to be any int user wants.
+	*/
+	public void setHeight(int _height) {
+		height = _height;
+	}
 
 	/**
     void setNumOfMouths(int _mouthNumber)
@@ -243,6 +262,7 @@ public class Potatohead
     output += "Number Of Mouths: " + mouthNumber + ". ";
     output += "Nose Color: " + noseColor + ". ";
     output += "Age: " + age + ". ";
+	output += "Height: " + height + ". ";
 	  output += "Type of shoe: " + shoeType + ". "; 
 		output += "Color Of Eye(s): " + eyeColor + ". ";
 		output += "color of Shoes: " +shoeColor+ ". ";
